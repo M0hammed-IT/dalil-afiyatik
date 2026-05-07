@@ -26,3 +26,32 @@
 1. **نسخ المشروع (Clone):**
    ```bash
    git clone [https://github.com/M0hammed-IT/dalil-afiyatik.git](https://github.com/M0hammed-IT/dalil-afiyatik.git)
+2.الدخول إلى مجلد المشروع:
+cd dalil_afiyatik
+
+3.تثبيت الحزم البرمجية (Dependencies):
+composer install
+npm install
+npm run build
+
+4.إعداد بيئة العمل وقاعدة البيانات:
+
+قم بنسخ ملف .env.example وأعد تسميته إلى .env.
+
+قم بإنشاء قاعدة بيانات جديدة في (phpMyAdmin) باسم dalil_afiyatik_db.
+
+قم بتحديث بيانات الاتصال في ملف .env لربط قاعدة البيانات.
+
+5.توليد المفتاح وبناء الجداول مع البيانات (Migrate & Seed):
+php artisan key:generate
+php artisan migrate:fresh --seed
+
+6.تشغيل الخادم المحلي (Serve):
+php artisan serve
+الموقع سيكون متاحاً الآن عبر الرابط: http://127.0.0.1:8000
+
+📸 لقطات من النظام (Screenshots)
+(سيتم إضافة صور لعمل النظام قريباً)
+
+👨‍💻 إعداد وتطوير
+محمد رضا جعفر جبر - طالب في كلية تكنولوجيا المعلومات (المرحلة الثالثة).
